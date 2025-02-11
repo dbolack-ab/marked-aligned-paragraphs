@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Justified Text Center Justify 1`] = `"<p align="Center">Hello</p>"`;
+
+exports[`Justified Text Ignored inside a code block 1`] = `
+"<pre><code>
+:- Hello
+</code></pre>
+"
+`;
+
+exports[`Justified Text Left Justify 1`] = `"<p align="Left">Hello</p>"`;
+
+exports[`Justified Text Right Justify 1`] = `"<p align="Right">Hello</p>"`;
