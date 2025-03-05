@@ -1,7 +1,7 @@
 {
-  "name": "marked-justified-paragraphs",
+  "name": "marked-alignment-paragraphs",
   "version": "1.0.0",
-  "description": "Paragraph Justification Elements for Marked.js",
+  "description": "Paragraph alignment Elements for Marked.js",
   "main": "./lib/index.cjs",
   "module": "./src/index.js",
   "browser": "./lib/index.umd.js",
@@ -9,8 +9,8 @@
   "keywords": [
     "marked",
     "extension",
-    "superscript",
-    "subscript"
+    "alignment",
+    "paragraph"
   ],
   "scripts": {
     "test": "jest --verbose",
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbolack-ab/marked-justified-paragraphs.git"
+    "url": "git+https://github.com/dbolack-ab/marked-aligned-paragraphs.git"
   },
   "author": "David Bolack <abquintic@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dbolack-ab/marked-justified-paragraphs/issues"
+    "url": "https://github.com/dbolack-ab/marked-aligned-paragraphs/issues"
   },
-  "homepage": "https://github.com/dbolack-ab/marked-justified-paragraphs#readme",
+  "homepage": "https://github.com/dbolack-ab/marked-aligned-paragraphs#readme",
   "peerDependencies": {
     "marked": ">=3 <16"
   },

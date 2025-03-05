@@ -1,32 +1,32 @@
 import { marked } from 'marked';
-import justifiedParagraphs from '../src/index.js';
+import alignedParagraphs from '../src/index.js';
 
 function trimLines(s) {
   return s.split('\n').map(l => l.trim()).join('\n');
 }
 
-describe('Justified Text', () => {
+describe('Aligned Text', () => {
   beforeEach(() => {
     marked.setOptions(marked.getDefaults());
   });
 
-  test('Left Justify', () => {
-    marked.use(justifiedParagraphs());
+  test('Left Aligned', () => {
+    marked.use(alignedParagraphs());
     expect(marked(trimLines(`:- Hello`))).toMatchSnapshot();
   });
 
-  test('Right Justify', () => {
-    marked.use(justifiedParagraphs());
+  test('Right Aligned', () => {
+    marked.use(alignedParagraphs());
     expect(marked(trimLines(`-: Hello`))).toMatchSnapshot();
   });
 
-  test('Center Justify', () => {
-    marked.use(justifiedParagraphs());
+  test('Center Aligned', () => {
+    marked.use(alignedParagraphs());
     expect(marked(trimLines(`:-: Hello`))).toMatchSnapshot();
   });
 
   test('Ignored inside a code block', () => {
-    marked.use(justifiedParagraphs());
+    marked.use(alignedParagraphs());
     expect(marked(trimLines('```\n\n:- Hello\n\n```\n'))).toMatchSnapshot();
   });
 });
